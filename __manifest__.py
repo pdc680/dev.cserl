@@ -7,7 +7,7 @@
     'depends': [
         'account'
     ],
-    'installable': False,
-    'auto_install': False,
-    'application': True,
+    'installable': True,
+    'auto_install': True,
+    'application': False,
 }
