@@ -5,7 +5,7 @@
     """,
     'author': 'PDC',
     'depends': [
-        'hr'
+        'hr_expense'
     ],
     'installable': True,
     'auto_install': False,
