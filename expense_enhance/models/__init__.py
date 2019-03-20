@@ -1,1 +1,1 @@
-from . import hr.expense
+from . import hr
