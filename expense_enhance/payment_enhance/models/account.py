@@ -7,4 +7,4 @@ from odoo import fields, models
 class HrExpenseSheet(models.Model):
     _inherit = "account.payment"
 
-    destination_account_id = fields.Many2one('account.account', domain=[('company_id', '=', 'company_id'), ('internal_type', '=', 'payable')], readonly=False)
+    destination_account_id = fields.Many2one('account.account', compute='_compute_destination_account_id', domain=[('company_id', '=', 'company_id'), ('internal_type', '=', 'payable')], readonly=False)
