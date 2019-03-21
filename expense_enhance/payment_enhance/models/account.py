@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
+
+from odoo import fields, models
+
+
+class HrExpenseSheet(models.Model):
+    _inherit = "account.payment"
+
+    destination_account_id = fields.many2one(readonly=False)
